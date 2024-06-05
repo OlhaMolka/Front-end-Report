@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Swap Input Content</title>
+</head>
+<body>
+<div class="container">
+  <h2>SWAP ME</h2>
+  <input type="text" id="input1" placeholder="Введіть текст">
+  <br>
+  <input type="text" id="input2" placeholder="Введіть текст">
+  <br>
+  <button onclick="swapInputs()">SWAP ME</button>
+</div>
+<script>
+  function swapInputs() {
+    const input1 = document.getElementById('input1');
+    const input2 = document.getElementById('input2');
+    const temp = input1.value;
+    input1.value = input2.value;
+    input2.value = temp;
+  }
+</script>
+</body>
+</html>
+

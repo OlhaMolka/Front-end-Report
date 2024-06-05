@@ -1,0 +1,60 @@
+<body>
+    <section class="inserted__title">
+        <h2></h2>
+      </section>
+      <section class="inserted__content">
+        <p>Для створення будильника на JavaScript потрібно спочатку створити клас, який буде відповідати за функціональність будильника.
+
+          <p>У конструкторі класу ми ініціалізуємо властивості alarmTime (час будильника) та isAlarmOn (стан будильника - увімкнено/вимкнено). Початково обидва значення встановлюються на null та false відповідно.</p>
+          
+          <p>Методи класу:</p>
+          
+          <p>setAlarm(time): Цей метод приймає час у форматі годин:хвилини і встановлює час будильника.</p>
+          <p>turnOnAlarm(): Цей метод увімкнює будильник, змінюючи властивість isAlarmOn на true.</p>
+          <p>turnOffAlarm(): Цей метод вимикає будильник, змінюючи властивість isAlarmOn на false.</p>
+          <p>checkAlarm(): Цей метод перевіряє, чи прийшов час для спрацювання будильника. Він отримує поточний час, порівнює його з встановленим часом будильника та виводить повідомлення, якщо час спрацювання настав.</p>
+      </section>
+      <div class="container">
+        <pre><code>
+          class AlarmClock {
+            constructor() {
+              this.alarmTime = null;
+              this.isAlarmOn = false;
+            }
+          
+            setAlarm(time) {
+              this.alarmTime = time;
+              console.log(`Будильник встановлено на ${time}`);
+            }
+          
+            turnOnAlarm() {
+              this.isAlarmOn = true;
+              console.log("Будильник увімкнено");
+            }
+          
+            turnOffAlarm() {
+              this.isAlarmOn = false;
+              console.log("Будильник вимкнено");
+            }
+          
+            checkAlarm() {
+              if (this.isAlarmOn && this.alarmTime) {
+                const now = new Date();
+                const alarm = new Date(this.alarmTime);
+                if (now.getHours() === alarm.getHours() && now.getMinutes() === alarm.getMinutes()) {
+                  console.log("Час для будильника! Пора прокидатися!");
+                }
+              }
+            }
+          }
+          
+          const myAlarm = new AlarmClock();
+          myAlarm.setAlarm("08:00");
+          myAlarm.turnOnAlarm();
+          
+          setInterval(() => {
+            myAlarm.checkAlarm();
+          }, 60000); 
+        </code></pre>
+      </div>
+</body>

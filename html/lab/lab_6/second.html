@@ -1,0 +1,39 @@
+<body>
+  <section class="inserted__title">
+    <h2></h2>
+  </section>
+  <section class="inserted__content">
+    <p>Напишіть функцію getProductDetails, яка приймає ідентифікатор товару productId та дві колбек-функції successCallback та errorCallback.
+
+      // Функція getProductDetails повинна отримати деталі про вказаний товар та передати їх у successCallback.
+      
+      // У випадку якщо товар не знайдено, викликається errorCallback і передається повідомлення про помилку.
+      </p>
+  </section>
+  <div class="container"><pre><code>
+    function getProductDetails(productId, successCallback, errorCallback) {
+      // Логіка для отримання даних про товар за допомогою productId
+      let product = getProductById(productId); // Припустимо, що це функція, яка повертає деталі товару за його ідентифікатором
+      
+      if (product) {
+        successCallback(product); // Викликаємо successCallback та передаємо деталі товару
+      } else {
+        errorCallback("Товар не знайдено"); // Викликаємо errorCallback та передаємо повідомлення про помилку
+      }
+    }
+    
+    // Приклад використання
+    const productId = "12345"; // Ідентифікатор товару
+    const successCallback = function(product) {
+      console.log("Деталі товару:", product);
+    };
+    
+    const errorCallback = function(message) {
+      console.error("Помилка:", message);
+    };
+    
+    getProductDetails(productId, successCallback, errorCallback);
+    
+  </code></pre></div>
+
+</body>

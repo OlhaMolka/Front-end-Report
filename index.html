@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link id="extra_css" rel="stylesheet" type="text/css" href="" />
+    <title>Report</title>
+    <link rel="icon" href="./img/tdesign--doge.svg" type="favicon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  </head>
+  <body class="body">
+    <header class="header header--bordered">
+      <div class="header__logo">
+      </div>
+      <section class="header__title title">
+        <div class="title title__name">
+          <h1>ЗВІТИ З ЛАБОРАТОРНИХ РОБІТ</h1>
+        </div>
+        <div class="title title__subject">
+          <h2>
+            З ДИСЦИПЛІНИ "ОСНОВИ КЛІЄНТСЬКИХ РОЗРОБОК"
+          </h2>
+        </div>
+        <div class="title title__student">
+          <h3>
+            Студентки групи ЗПІ-зп 31
+            <span>Ольги Мольки</span>
+          </h3>
+          <div class="tooltip">
+            <img
+              class="image student-photo"
+              src="./img/Ola photo_small.png"
+              alt="My photo"
+            />
+          </div>
+        </div>
+      </section>
+      <button type="button" id="help_button" class="header__help-button">
+        <span class="material-symbols-outlined"></span>
+      </button>
+    </header>
+    <section class="nav nav--row nav--bordered">
+      <div class="nav-item">
+        <button id="lb1" class="button" type="button">Лаба №1</button>
+      </div>
+      <div class="nav-item">
+        <button id="lb2" class="button" type="button">Лаба №2</button>
+      </div>
+      <div class="nav-item">
+        <button id="lb3" class="button" type="button">Лаба №3</button>
+      </div>
+      <div class="nav-item">
+        <button id="lb4" class="button" type="button">Лаба №4</button>
+      </div>
+      <div class="nav-item">
+        <button id="lb5" class="button" type="button">Лаба №5</button>
+      </div>
+      <div class="nav-item">
+        <button id="lb6" class="button" type="button">Лаба №6</button>
+      </div>
+      <div class="nav-item">
+        <button id="lb7" class="button" type="button">Лаба №7</button>
+      </div>
+    </section>
+    <main class="main">
+      <aside
+        id="accide_buttons"
+        class="aside-left nav nav--coll nav--bordered"
+      ></aside>
+      <section
+        id="inserted"
+        class="main-content main-content--bordered"
+      ></section>
+    </main>
+    <footer class="footer footer--bordered">
+    </footer>
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>

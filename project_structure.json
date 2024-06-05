@@ -1,0 +1,243 @@
+{
+    "data": {
+        "labs": {
+            "lb1": {
+                "title": "Лаба1",
+                "rel_path": "./html/lab/lab_1/",
+                "buttons": {
+                    "topic_btn": {
+                        "title": "Опис предметного середовища",
+                        "html_file": "topic.html",
+                        "css_file": "topic.css"
+                    },
+                    "goal_btn": {
+                        "title": "Мета роботи",
+                        "html_file": "goal.html",
+                        "css_file": "goal.css"
+                    },
+                    "tables_btn": {
+                        "title": "Таблиця",
+                        "html_file": "tables.html",
+                        "css_file": "tables.css"
+                    },
+                    "forms_btn": {
+                        "title": "Форма",
+                        "html_file": "forms.html",
+                        "css_file": "forms.css"
+                    },
+                    "imgs_btn": {
+                        "title": "Зображення",
+                        "html_file": "imgs.html",
+                        "css_file": "imgs.css"
+                    },
+                    "conclusion_btn": {
+                        "title": "Висновки",
+                        "html_file": "conclusion.html",
+                        "css_file": "conclusion.css"
+                    }
+                }
+            },
+            "lb2": {
+                "title": "Лаба2",
+                "rel_path": "./html/lab/lab_2/",
+                "buttons": {
+                    "goal_btn": {
+                        "title": "Мета роботи",
+                        "html_file": "goal.html",
+                        "css_file": "goal.css"
+                    },
+                    "selector_btn": {
+                        "title": "Селектори",
+                        "html_file": "selector.html",
+                        "css_file": "selector.css"
+                    },
+                    "identificator_btn": {
+                        "title": "Ідентифікатори",
+                        "html_file": "identificator.html",
+                        "css_file": "identificator.css"
+                    },
+                    "conclusion_btn": {
+                        "title": "Висновки",
+                        "html_file": "conclusion.html",
+                        "css_file": "conclusion.css"
+                    }
+                }
+            },
+            "lb3": {
+                "title": "Лаба3",
+                "rel_path": "./html/lab/lab_3/",
+                "buttons": {
+                    "goal_btn": {
+                        "title": "Мета роботи",
+                        "html_file": "goal.html",
+                        "css_file": "goal.css"
+                    },
+                    "flexbox_btn": {
+                        "title": "Flexbox",
+                        "html_file": "flexbox.html",
+                        "css_file": "flexbox.css"
+                    },
+                    "conclusion_btn": {
+                        "title": "Висновки",
+                        "html_file": "conclusion.html",
+                        "css_file": "conclusion.css"
+                    }
+                }
+            },
+            "lb4": {
+                "title": "Лаба4",
+                "rel_path": "./html/lab/lab_4/",
+                "buttons": {
+                    "goal_btn": {
+                        "title": "Мета роботи",
+                        "html_file": "goal.html",
+                        "css_file": "goal.css"
+                    },
+                    "array_btn": {
+                        "title": "Одномірний масив",
+                        "html_file": "array.html",
+                        "css_file": "array.css"
+                    },
+                    "tooltip_btn": {
+                        "title": "Тooltip",
+                        "html_file": "tooltip.html",
+                        "css_file": "tooltip.css"
+                    },
+                    "conclusion_btn": {
+                        "title": "Висновки",
+                        "html_file": "conclusion.html",
+                        "css_file": "conclusion.css"
+                    }
+                }
+            },
+            "lb5": {
+                "title": "Лаба5",
+                "rel_path": "./html/lab/lab_5/",
+                "buttons": {
+                    "goal_btn": {
+                        "title": "Мета роботи",
+                        "html_file": "goal.html",
+                        "css_file": "goal.css"
+                    },
+                    "array_btn": {
+                        "title": "Одномірні масиви",
+                        "html_file": "array.html",
+                        "css_file": "array.css"
+                    },
+                    "tooltip_btn": {
+                        "title": "Сортування бульбашкою",
+                        "html_file": "bubble.html",
+                        "css_file": "bubble.css"
+                    },
+                    "alarm_btn": {
+                        "title": "Будильник",
+                        "html_file": "alarm.html",
+                        "css_file": "alarm.css"
+                    },
+                    "conclusion_btn": {
+                        "title": "Висновки",
+                        "html_file": "conclusion.html",
+                        "css_file": "conclusion.css"
+                    }
+                }
+            },
+            "lb6": {
+                "title": "Лаба6",
+                "rel_path": "./html/lab/lab_6/",
+                "buttons": {
+                    "goal_btn": {
+                        "title": "Мета роботи",
+                        "html_file": "goal.html",
+                        "css_file": "goal.css"
+                    },
+                    "second_btn": {
+                        "title": "Друге",
+                        "html_file": "second.html",
+                        "css_file": "second.css"
+                    },
+                    "fourth_btn": {
+                        "title": "Четверте",
+                        "html_file": "fourth.html",
+                        "css_file": "fourth.css"
+                    },
+                    "sixth_btn": {
+                        "title": "Шосте",
+                        "html_file": "sixth.html",
+                        "css_file": "sixth.css"
+                    },
+                    "eigth_btn": {
+                        "title": "Восьме",
+                        "html_file": "eighth.html",
+                        "css_file": "eighth.css"
+                    },
+                    "ninth_btn": {
+                        "title": "Дев'яте",
+                        "html_file": "ninth.html",
+                        "css_file": "ninth.css"
+                    },
+                    "tenth_btn": {
+                        "title": "Деcяте",
+                        "html_file": "tenth.html",
+                        "css_file": "tenth.css"
+                    },
+                    "conclusion_btn": {
+                        "title": "Висновки",
+                        "html_file": "conclusion.html",
+                        "css_file": "conclusion.css"
+                    }
+                }
+            },
+            "lb7": {
+                "title": "Лаба7",
+                "rel_path": "./html/lab/lab_7/",
+                "buttons": {
+                    "goal_btn": {
+                        "title": "Мета роботи",
+                        "html_file": "goal.html",
+                        "css_file": "goal.css"
+                    },
+                    "swap_btn": {
+                        "title": "Друге",
+                        "html_file": "swap_me.html",
+                        "css_file": "swap_me.css"
+                    },
+                    "decrease_btn": {
+                        "title": "Четверте",
+                        "html_file": "fourth.html",
+                        "css_file": "fourth.css"
+                    },
+                    "double_btn": {
+                        "title": "Шосте",
+                        "html_file": "sixth.html",
+                        "css_file": "sixth.css"
+                    },
+                    "category_btn": {
+                        "title": "Сьоме",
+                        "html_file": "seventh.html",
+                        "css_file": "seventh.css"
+                    },
+                    "form_btn": {
+                        "title": "Восьме",
+                        "html_file": "eighth.html",
+                        "css_file": "eighth.css"
+                    },
+                    "ninth_btn": {
+                        "title": "Дев'яте",
+                        "html_file": "ninth.html",
+                        "css_file": "ninth.css"
+                    },
+                    "tenth_btn": {
+                        "title": "Деcяте",
+                        "html_file": "tenth.html",
+                        "css_file": "tenth.css"
+                    },
+                    "conclusion_btn": {
+                        "title": "Висновки",
+                        "html_file": "conclusion.html",
+                        "css_file": "conclusion.css"
+                    }
+                }
+            }
+        }
+    }
+}

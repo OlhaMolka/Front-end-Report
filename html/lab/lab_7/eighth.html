@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Form</title>
+</head>
+<body>
+<form class="login-form">
+  <label>
+    Email
+    <input type="email" name="email" />
+  </label>
+  <label>
+    Password
+    <input type="password" name="password" />
+  </label>
+  <button type="submit">Log in</button>
+</form>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const loginForm = document.querySelector('.login-form');
+
+    loginForm.addEventListener('submit', function(event) {
+      event.preventDefault(); // Зупиняємо дію за замовчуванням, щоб сторінка не перезавантажувалася
+
+      const emailInput = loginForm.elements['email'];
+      const passwordInput = loginForm.elements['password'];
+
+      // Перевіряємо, чи заповнені всі поля форми
+      if (emailInput.value.trim() === '' || passwordInput.value.trim() === '') {
+        alert('All form fields must be filled in');
+        return; // При незаповнених полях виходимо з функції обробки події
+      }
+
+      // Збираємо значення полів у об'єкт
+      const formData = {
+        email: emailInput.value.trim(),
+        password: passwordInput.value.trim()
+      };
+
+      // Виводимо об'єкт з введеними даними у консоль
+      console.log(formData);
+
+      // Очищаємо значення полів форми
+      loginForm.reset();
+    });
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Resize Square</title>
+</head>
+<body>
+<div class="container">
+  <h2>Змінити площу</h2>
+  <div class="square" id="square"></div>
+  <button onclick="decreaseSize()">Зменшити</button>
+  <button onclick="increaseSize()">Збільшити</button>
+</div>
+<script>
+  let size = 200; // Initial size of the square
+  const square = document.getElementById('square');
+  
+  function decreaseSize() {
+    size -= 15;
+    square.style.width = size + 'px';
+    square.style.height = size + 'px';
+  }
+  
+  function increaseSize() {
+    size += 15;
+    square.style.width = size + 'px';
+    square.style.height = size + 'px';
+  }
+</script>
+</body>
+</html>
+

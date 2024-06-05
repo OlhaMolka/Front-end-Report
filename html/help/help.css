@@ -1,0 +1,11 @@
+#inserted {
+   ul {
+      padding: 1em;
+   }
+   li {
+      padding-top: 10px;
+      padding-bottom: 20px;
+      text-align: left;
+      line-height: 1.5;
+   }
+}

@@ -1,0 +1,44 @@
+<body>
+    <section class="inserted__title">
+      <h2></h2>
+    </section>
+    <section class="inserted__content">
+      <p> Напиши функцію конструктор Storage який створює об'єкти  Для управління складом товарів.  При виклику отримуватиме один агрумент - початковий масив товарів,  і записувати їх у властивість items. 
+        Додай методи класу:   getItems() - повертає масив товарів,  addItems(item) - отримує новий товар та додає його до поточних,  removeItem(item) - отримує товар і, якщо він є, видаляє його з поточних </p>
+  <div class="container">
+    <pre><code>
+      class Storage {
+        constructor(initialItems = []) {
+          this.items = initialItems;
+        }
+      
+        getItems() {
+          return this.items;
+        }
+      
+        addItems(item) {
+          this.items.push(item);
+        }
+      
+        removeItem(item) {
+          const index = this.items.indexOf(item);
+          if (index !== -1) {
+            this.items.splice(index, 1);
+          }
+        }
+      }
+      
+      const arr = ["apple", "banana", "mango"];
+      const storage = new Storage(arr);
+      
+      console.log(storage.getItems()); // ["apple", "banana", "mango"]
+      
+      storage.addItems("orange");
+      console.log(storage.getItems()); // ["apple", "banana", "mango", "orange"]
+      
+      storage.removeItem("banana");
+      console.log(storage.getItems()); // ["apple", "mango", "orange"]      
+    </code></pre>
+  </div>
+    </section>
+  </body>

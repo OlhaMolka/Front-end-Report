@@ -1,0 +1,45 @@
+<body>
+    <section class="inserted__title">
+      <h2></h2>
+    </section>
+    <section class="inserted__content">
+      <p>Напишіть функцію checkBrackets(str) яка приймає рядок жс коду (someFn)  і перевіряє правильність закриття дужок () {} []
+        Якщо рядок містить коректний код функція повертає true.
+        В іншому випадку повертає false
+      </p>
+  <div class="container">
+    <pre><code>
+      function checkBrackets(str) {
+        const stack = [];
+        const openBrackets = ['(', '{', '['];
+        const closeBrackets = [')', '}', ']'];
+      
+        for (let char of str) {
+          if (openBrackets.includes(char)) {
+            stack.push(char);
+          } else if (closeBrackets.includes(char)) {
+            const lastOpenBracket = stack.pop();
+            const correspondingOpenBracket = openBrackets[closeBrackets.indexOf(char)];
+            if (lastOpenBracket !== correspondingOpenBracket) {
+              return false;
+            }
+          }
+        }
+      
+        return stack.length === 0;
+      }
+      
+      // Приклади використання
+      const code1 = "function someFn() { return true; }";
+      console.log(checkBrackets(code1)); // true
+      
+      const code2 = "function someFn() { return true; } }";
+      console.log(checkBrackets(code2)); // false
+      
+      const code3 = "function someFn() { return { value: [1, 2, 3] }; }";
+      console.log(checkBrackets(code3)); // true
+    
+    </code></pre>
+  </div>
+    </section>
+  </body>

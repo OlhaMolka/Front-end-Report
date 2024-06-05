@@ -1,0 +1,29 @@
+<body>
+  <section class="inserted__title">
+    <h2></h2>
+  </section>
+  <section class="inserted__content">
+    <p>Сортування бульбашкою - це один з простих алгоритмів сортування, який працює шляхом послідовного порівняння та обміну сусідніх елементів, поки весь масив не буде відсортований. Основна ідея полягає у тому, щоб переносити більші елементи донизу масиву, "збуваючи" їх як бульбашку, тому і назва - сортування бульбашкою.
+
+      <p>Основні кроки сортування бульбашкою:</p>
+      
+      <p>1. Проходимо по масиву від початку до кінця.</p>
+      <p>2. Порівнюємо кожну пару сусідніх елементів.</p>
+      <p>3. Якщо елементи у неправильному порядку (менший попереду від більшого), міняємо їх місцями.</p>
+      <p>4. Повторюємо цей процес для кожної пари елементів у масиві до тих пір, поки масив не буде відсортований.</p>
+  </section>
+  <div class="container"><pre><code>
+    // Сортування масиву методом бульбашки
+document.getElementById('sortArray').addEventListener('click', function() {
+    let size = parseInt(document.getElementById('arraySize').value);
+    let unsortedArray = generateRandomArray(size);
+
+    document.getElementById('unsortedArray').textContent = 'Unsorted array: ' + unsortedArray.join(', ');
+
+    let sortedArray = bubbleSort(unsortedArray);
+
+    document.getElementById('sortedArray').textContent = 'Sorted array in ascending order: ' + sortedArray.join(', ');
+});
+  </code></pre></div>
+
+</body>

@@ -1,0 +1,45 @@
+<body>
+    <section class="inserted__title">
+      <h2></h2>
+    </section>
+    <section class="inserted__content">
+      <p>
+        Напишіть функцію, яка приймає массив об'єктів і повертає новий массив об'єктів,у якому є знижка на  30 % на всі медикаменти ціна, яких перевищує 300 грн у масиві Надайте ід для кожного медикамента 
+  <pre><code>
+    const medicines = [
+    { name: "Noshpa", price: 170 },
+    { name: "Analgin", price: 55 },
+    { name: "Quanil", price: 310 },
+    { name: "Alphacholine", price: 390 },
+  ];
+    </code></pre>
+  <div class="container">
+    <pre><code>
+        const medicines = [
+        { name: "Noshpa", price: 170 },
+        { name: "Analgin", price: 55 },
+        { name: "Quanil", price: 310 },
+        { name: "Alphacholine", price: 390 },
+      ];
+      
+      function applyDiscount(medicines) {
+        const discountedMedicines = medicines.map((medicine, index) => {
+          if (medicine.price > 300) {
+            const discountedPrice = medicine.price * 0.7; // Знижка на 30%
+            return { id: index + 1, name: medicine.name, price: discountedPrice };
+          } else {
+            return { id: index + 1, name: medicine.name, price: medicine.price };
+          }
+        });
+      
+        return discountedMedicines;
+      }
+      
+      const discountedMedicines = applyDiscount(medicines);
+      console.log(discountedMedicines);      
+    
+    </code></pre>
+  </div>
+  </p>
+    </section>
+  </body>

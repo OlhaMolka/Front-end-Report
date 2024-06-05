@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Duplicate List Items</title>
+</head>
+<body>
+<div class="container">
+  <h2>Duplicate List Items</h2>
+  <ol id="numberList">
+    <li>1</li>
+    <li>4</li>
+    <li>8</li>
+    <li>16</li>
+    <li>20</li>
+    <li>30</li>
+  </ol>
+  <button onclick="doubleValues()">Подвоїти</button>
+</div>
+<script>
+  function doubleValues() {
+    const numberList = document.getElementById('numberList');
+    const items = numberList.getElementsByTagName('li');
+    for (let item of items) {
+      const value = parseInt(item.textContent);
+      item.textContent = value * 2;
+    }
+  }
+</script>
+</body>
+</html>
